@@ -1,0 +1,77 @@
+:root {
+  --bg-color: #0A192F;
+  --primary-color: #64FFDA;
+  --secondary-color: #8892B0;
+  --text-color: #CCD6F6;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  color: #333;
+  overflow-x: hidden;
+}
+
+.text-consolas {
+  font-family: consolas;
+}
+
+#hero h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  animation: float 3s ease-in-out infinite;
+  font-family: consolas;
+}
+
+header p {
+  font-size: 1.2rem;
+  font-family: consolas;
+}
+
+@keyframes float {
+
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+section {
+  padding: 4rem 2rem;
+}
+
+.project-card {
+  transition: transform 0.3s ease;
+}
+
+.project-card:hover {
+  transform: translateY(-10px);
+}
+
+footer {
+  text-align: center;
+  padding: 2rem;
+  font-size: 0.9rem;
+}
+
+svg {
+  position: absolute;
+  z-index: 0;
+}
+
+.blob {
+  top: 20%;
+  left: 10%;
+  width: 200px;
+  opacity: 0.3;
+}
+
+.blob2 {
+  bottom: 10%;
+  right: 15%;
+  width: 250px;
+  opacity: 0.2;
+}
