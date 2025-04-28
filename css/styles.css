@@ -11,21 +11,30 @@ body {
   overflow-x: hidden;
 }
 
+section {
+  scroll-margin-top: 56px;
+}
+
 .text-consolas {
   font-family: consolas;
 }
 
-#hero h1 {
-  font-size: 3rem;
-  margin-bottom: 1rem;
-  animation: float 3s ease-in-out infinite;
-  font-family: consolas;
+.text-sand {
+  color: var(--primary-color);
 }
 
-header p {
-  font-size: 1.2rem;
-  font-family: consolas;
+.text-bold {
+  font-weight: bold;
 }
+
+.float {
+  animation: float 3s ease-in-out infinite;
+}
+
+#projects {
+  background-color: var(--bg-color);
+}
+
 
 @keyframes float {
 

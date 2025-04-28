@@ -12,27 +12,27 @@
   <link rel="stylesheet" href="css/styles.css">
 </head>
 
-<body>
+<body class="bg-dark">
   <header>
     <nav class="nav justify-content-center bg-black fixed-top py-2">
-      <a class="nav-link text-white" href="#projects">Proyectos</a>
-      <a class="nav-link text-white" href="#about">Sobre mi</a>
-      <a class="nav-link text-white" href="#contact">Contacto</a>
+      <a class="nav-link text-sand" href="#projects">Proyectos</a>
+      <a class="nav-link text-sand" href="#about">Sobre mi</a>
+      <a class="nav-link text-sand" href="#contact">Contacto</a>
     </nav>
   </header>
 
   <!-- Hero -->
-  <div id="hero" class="vh-100 bg-dark">
+  <div id="hero" class="vh-100">
     <div class="row">
       <div class="col">
         <img src="assets/images/profile.jpg" class="img-fluid vh-100" alt="image desc" />
       </div>
       <div class="col align-content-center">
-        <div class="text-light text-center text-consolas">
-          <h1>¡Hola, soy Joaquín Flores</h1>
+        <div class="text-sand text-center text-consolas">
+          <h1 class="display-5 float">¡Hola, soy Joaquín Flores</h1>
           <p class="lead">Desarrollador Full Stack Junior.</p>
           <a class="btn btn-outline-light text-uppercase" href="#projects">
-            Conoceme! <i class="fa fa-angle-down"></i>
+            Proyectos <i class="fa fa-angle-down"></i>
           </a>
         </div>
       </div>
@@ -40,66 +40,83 @@
   </div>
 
   <!-- Projects -->
-  <section id="projects" class="bg-primary-subtle vh-100">
-    <h2 class="text-center mb-4">Proyectos</h2>
-    <div class="row g-4">
-      <div class="col-md-4">
-        <div class="card project-card p-3">
-          <h5>Tambo</h5>
-          <p>Sistema integral para administración de pequeños campos y granjas. <br> </p>
-        </div>
+  <section id="projects">
+    <h2 class="text-center display-6 mb-5 text-sand text-bold">Proyectos</h2>
+    <div class="row">
+      <div class="col-md-4 my-2">
+        <a href="https://github.com/Joaquin-Flores/Tambo" class="text-decoration-none">
+          <div class="card project-card p-3">
+            <h5>Tambo</h5>
+            <p>Sistema integral para administración de pequeños campos y granjas. <br> </p>
+          </div>
+        </a>
       </div>
-      <div class="col-md-4">
-        <div class="card project-card p-3">
-          <h5>Proyecto 2</h5>
-          <p>Sitio de e-commerce responsive basado en Bootstrap y Stripe.</p>
-        </div>
+      <div class="col-md-4 my-2">
+        <a href="https://joaquin-flores.github.io/Sabios/" class="text-decoration-none">
+          <div class="card project-card p-3">
+            <h5>Sabios</h5>
+            <p>Juego de trivia católica.</p>
+          </div>
+        </a>
       </div>
-      <div class="col-md-4">
-        <div class="card project-card p-3">
-          <h5>Proyecto 3</h5>
-          <p>Blog de tecnología creado con Gatsby y GraphQL.</p>
-        </div>
+      <div class="col-md-4 my-2">
+        <a href="https://github.com/Joaquin-Flores/SNAKE-GAME" class="text-decoration-none">
+          <div class="card project-card p-3">
+            <h5>Snake</h5>
+            <p>Juego de Snake desarrollado en Java.</p>
+          </div>
+        </a>
       </div>
     </div>
   </section>
 
   <!-- About -->
-  <section id="about" class="vh-100 bg-success-subtle">
-    <div class="row justify-content-center align-items-center g-2">
-      <div class="col">Column</div>
-      <div class="col">Column</div>
-      <div class="col">Column</div>
+  <section id="about" class="vh-100">
+    <div class="container text-sand text-center">
+      <h2 class="display-6 text-bold mb-4">Sobre mí</h2>
+      <p class="m-0">|</p>
+      <p class="m-0">|</p>
+      <p class="m-0">|</p>
+      <p class="m-0">|</p>
+      <p class="lead my-5">
+        Decidí estudiar ingeniería informática porque me fascina la programación, me apasiona la resolución
+        de problemas y el enfoque lógico que se le puede dar, además de las ciencias en general.
+        Como ingeniero informático, me llenaré de herramientas para dominar tecnologías y aportar una visión estratégica
+        en donde trabaje.
+      </p>
+      <p class="m-0">|</p>
+      <p class="m-0">|</p>
+      <p class="m-0">|</p>
+      <p class="m-0">|</p>
+      <br>
+      <div
+        class="row mt-5"
+      >
+        <div class="col"><a href="https://www.linkedin.com/in/joaqu%C3%ADn-flores-764428215/"><i class="fa-brands fa-linkedin text-sand fa-5x"></i></a></div>
+        <div class="col"><a href="https://github.com/Joaquin-Flores"><i class="fa-brands fa-github text-sand fa-5x"></i></a></div>
+        <div class="col"><a href="https://discord.gg/qrpEBP7CC7"><i class="fa-brands fa-discord text-sand fa-5x"></i></a></div>
+      </div>
+      
     </div>
 
-    <h2 class="text-center mb-4">Sobre mí</h2>
-    <p class="text-center">
-      Decidí estudiar ingeniería informática porque me fascina la programación, me apasiona la resolución
-      de problemas y el enfoque lógico que se le puede dar, además de las ciencias en general.
-      Como ingeniero informático, me llenaré de herramientas para dominar tecnologías y aportar una visión estratégica
-      en donde trabaje.
-    </p>
   </section>
 
 
   <!-- Contact -->
-  <section id="contact" class="container text-center">
-    <h2 class="mb-4">Contáctame</h2>
-    <p>¿Tienes una idea? ¡Hablemos! 🚀</p>
-    <a href="mailto:tuemail@ejemplo.com" class="btn btn-primary mt-3"><i class="fa fa-envelope"></i> Enviar email</a>
+  <section id="contact" class="text-center bg-success-subtle">
+    <div class="container my-4">
+      <h2 class="mb-4 display-6 text-bold">Contáctame</h2>
+      <p class="lead">¿Tienes una idea? ¡Hablemos! 🚀</p>
+      <a href="mailto:joaquinflores0109@gmail.com" class="btn btn-primary mt-3"><i class="fa fa-envelope"></i> Enviar email</a>
+    </div>
   </section>
 
   <!-- Footer -->
-  <footer>
-    © 2025 [Tu Nombre] | Hecho con ❤️ y mucho café
+  <footer class="bg-dark bg-gradient">
+    <div class="text-sand">
+      © 2025 | Desarrollado por Joaquín Flores
+    </div>
   </footer>
-
-  <!-- GSAP para animaciones (opcional) -->
-  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.2/dist/gsap.min.js"></script>
-  <script>
-    gsap.from("header h1", { duration: 1, y: -50, opacity: 0 });
-    gsap.from("header p", { duration: 1, y: 50, opacity: 0, delay: 0.5 });
-  </script>
 
 </body>
 
