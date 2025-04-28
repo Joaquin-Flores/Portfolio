@@ -52,12 +52,16 @@ section {
   padding: 4rem 2rem;
 }
 
-.project-card {
+.smooth-transition {
   transition: transform 0.3s ease;
 }
 
-.project-card:hover {
+.hover-effect:hover {
   transform: translateY(-10px);
+}
+
+.rotate-360 {
+  transform: rotate(180deg);
 }
 
 footer {

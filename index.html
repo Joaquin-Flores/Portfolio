@@ -4,15 +4,20 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Mi Portfolio - Joaquín Flores</title>
-  <script src="js/script.js"></script>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <title>Portfolio de desarrollador - Joaquín Flores</title>
+  <script src="js/main.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/js/bootstrap.min.js" integrity="sha512-ykZ1QQr0Jy/4ZkvKuqWn4iF3lqPZyij9iRv6sGqLRdTPkY69YX6+7wvVGmsdBbiIfN/8OdsI7HABjvEok6ZopQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/css/bootstrap.min.css" rel="stylesheet" />
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet" />
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="css/styles.css">
 </head>
 
+<!-- Hacer todo el sitio responsive :) -->
 <body class="bg-dark">
+
+  <!-- Header -->
+   <!-- Agregar botón de versión clara/oscura -->
   <header>
     <nav class="nav justify-content-center bg-black fixed-top py-2">
       <a class="nav-link text-sand" href="#projects">Proyectos</a>
@@ -23,17 +28,19 @@
 
   <!-- Hero -->
   <div id="hero" class="vh-100">
-    <div class="row">
-      <div class="col">
-        <img src="assets/images/profile.jpg" class="img-fluid vh-100" alt="image desc" />
-      </div>
-      <div class="col align-content-center">
-        <div class="text-sand text-center text-consolas">
-          <h1 class="display-5 float">¡Hola, soy Joaquín Flores</h1>
-          <p class="lead">Desarrollador Full Stack Junior.</p>
-          <a class="btn btn-outline-light text-uppercase" href="#projects">
-            Proyectos <i class="fa fa-angle-down"></i>
-          </a>
+    <div class="container-fluid p-0">
+      <div class="row">
+        <div class="col-lg-6">
+          <img src="assets/images/profile.jpg" class="img-fluid vh-100" alt="foto de perfil Joaquín Flores" />
+        </div>
+        <div class="col-lg-6 align-content-center">
+          <div class="text-sand text-center text-consolas">
+            <h1 class="display-5 float">¡Hola, soy Joaquín Flores</h1>
+            <p class="lead">Desarrollador Full Stack Junior.</p>
+            <a class="btn btn-outline-light text-uppercase" href="#projects">
+              Proyectos <i class="fa fa-angle-down"></i>
+            </a>
+          </div>
         </div>
       </div>
     </div>
@@ -41,37 +48,229 @@
 
   <!-- Projects -->
   <section id="projects">
-    <h2 class="text-center display-6 mb-5 text-sand text-bold">Proyectos</h2>
-    <div class="row">
-      <div class="col-md-4 my-2">
-        <a href="https://github.com/Joaquin-Flores/Tambo" class="text-decoration-none">
-          <div class="card project-card p-3">
-            <h5>Tambo</h5>
-            <p>Sistema integral para administración de pequeños campos y granjas. <br> </p>
+    <div class="container-fluid">
+
+      <!-- Título de la sección -->
+      <h2 class="text-center display-6 mb-5 text-sand text-bold">Proyectos</h2>
+
+      <!-- Primer fila -->
+      <div class="row">
+
+        <div class="col-xxl-4 col-lg-6 my-2">
+
+          <!-- Primer tarjeta -->
+          <div class="card shadow hover-effect smooth-transition bg-primary overflow-hidden">
+            <a href="#collapseCard1" class="row d-flex text-decoration-none card-header py-3 collapsed" data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="collapseCard1">
+              <div class="col-6">
+                <h3 class="m-0 text-bold h4">Tambo</h3>
+              </div>  
+              <div class="col-6 text-end">
+                <i id="chevronIcon" class="smooth-transition fa fa-chevron-down mx-1 align-content-center"></i>
+              </div>
+            </a>
+            <div class="collapse" id="collapseCard1">
+              <div class="card-body row bg-white">
+                <div class="col-sm-6">
+                  <p>Tambo es un sistema integral para administración de pequeños campos y granjas.</p>
+                  <p class="fst-italic">Tecnologías:</p>
+                  <div class="d-flex my-3">
+                    <p class="lead my-0 mx-1 user-select-none text-black-50">.NET</p>
+                    <i class="fa-brands fa-bootstrap fa-2x text-black-50 mx-1"></i>
+                    <i class="fa fa-database fa-2x text-black-50 mx-1"></i>
+                    <i class="fa-brands fa-html5 fa-2x text-black-50 mx-1"></i>
+                    <i class="fa-brands fa-css3 fa-2x text-black-50 mx-1"></i>
+                    <i class="fa-brands fa-js fa-2x text-black-50 mx-1"></i>
+                  </div>
+                </div>
+                <div class="col-sm-6">
+                  <a href="https://github.com/Joaquin-Flores/Tambo">
+                    <img src="assets/images/thumbnail-Tambo.png" alt="Thumbnail Tambo" class="img-thumbnail shadow hover-effect smooth-transition smooth-transition">
+                  </a>
+                </div>
+              </div>
+            </div>
           </div>
-        </a>
+        </div>
+
+        <div class="col-xxl-4 col-lg-6 my-2">
+
+          <!-- Segunda tarjeta -->
+          <div class="card shadow hover-effect smooth-transition bg-success-subtle overflow-hidden">
+            <a href="#collapseCard2" class="row d-flex text-decoration-none card-header py-3 collapsed" data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="collapseCard2">
+              <div class="col-6">
+                <h3 class="m-0 text-bold h4">Sabios</h3>
+              </div>  
+              <div class="col-6 text-end">
+                <i id="chevronIcon" class="smooth-transition fa fa-chevron-down mx-1 align-content-center"></i>
+              </div>
+            </a>
+            <div class="collapse" id="collapseCard2">
+              <div class="card-body row bg-white">
+                <div class="col-sm-6">
+                  <p>Sabios es un juego de trivia católica. Tiene una tienda, lógica de puntaje y más. Visita aquí el <a href="https://joaquin-flores.github.io/Sabios" target="_blank">sitio en vivo</a></p>
+                  <p class="fst-italic">Tecnologías:</p>
+                  <div class="d-flex my-3">
+                    <p class="lead my-0 mx-1 user-select-none text-black-50">.json</p>
+                    <i class="fa-brands fa-bootstrap fa-2x text-black-50 mx-1"></i>
+                    <i class="fa-brands fa-html5 fa-2x text-black-50 mx-1"></i>
+                    <i class="fa-brands fa-css3 fa-2x text-black-50 mx-1"></i>
+                    <i class="fa-brands fa-js fa-2x text-black-50 mx-1"></i>
+                  </div>
+                </div>
+                <div class="col-sm-6">
+                  <a href="https://github.com/Joaquin-Flores/Sabios">
+                    <img src="assets/images/thumbnail-Sabios.png" alt="Thumbnail Sabios" class="img-thumbnail shadow hover-effect smooth-transition smooth-transition">
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-xxl-4 col-lg-6 my-2">
+
+          <!-- Tercer tarjeta -->
+          <div class="card shadow hover-effect smooth-transition bg-info overflow-hidden">
+            <a href="#collapseCard3" class="row d-flex text-decoration-none card-header py-3 collapsed" data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="collapseCard3">
+              <div class="col-6">
+                <h3 class="m-0 text-bold h4">Snake</h3>
+              </div>  
+              <div class="col-6 text-end">
+                <i id="chevronIcon" class="smooth-transition fa fa-chevron-down mx-1 align-content-center"></i>
+              </div>
+            </a>
+            <div class="collapse" id="collapseCard3">
+              <div class="card-body row bg-white">
+                <div class="col-sm-6">
+                  <p>Snake es el juego retro clásico. Desarrollado utilizando conceptos claves de POO.</p>
+                  <p class="fst-italic">Tecnologías:</p>
+                  <div class="d-flex my-3">
+                    <p class="lead my-0 mx-1 user-select-none text-black-50">Java</p>
+                    <i class="fa fa-mug-hot fa-2x text-black-50 mx-1"></i>
+                  </div>
+                </div>
+                <div class="col-sm-6">
+                  <a href="https://github.com/Joaquin-Flores/Snake">
+                    <img src="assets/images/thumbnail-Tambo.png" alt="Thumbnail Tambo" class="img-thumbnail shadow hover-effect smooth-transition smooth-transition">
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
-      <div class="col-md-4 my-2">
-        <a href="https://joaquin-flores.github.io/Sabios/" class="text-decoration-none">
-          <div class="card project-card p-3">
-            <h5>Sabios</h5>
-            <p>Juego de trivia católica.</p>
+
+      <!-- Segunda fila -->
+      <div class="row">
+
+        <div class="col-xxl-4 col-lg-6 my-2">
+
+          <!-- Cuarta tarjeta -->
+          <div class="card shadow hover-effect smooth-transition">
+            <a href="#collapseCard4" class="row d-flex text-decoration-none card-header py-3 collapsed" data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="collapseCard4">
+              <div class="col-6">
+                <h3 class="m-0 text-bold h4">Calculadora</h3>
+              </div>  
+              <div class="col-6 text-end">
+                <i id="chevronIcon" class="smooth-transition fa fa-chevron-down mx-1 align-content-center"></i>
+              </div>
+            </a>
+            <div class="collapse" id="collapseCard4">
+              <div class="card-body row">
+                <div class="col-sm-6">
+                  <p>Tambo es un sistema integral para administración de pequeños campos y granjas.</p>
+                  <p class="fst-italic">Tecnologías:</p>
+                  <div class="d-flex my-3">
+                    <p class="lead my-0 mx-1 user-select-none text-black-50">.NET</p>
+                    <i class="fa-brands fa-bootstrap fa-2x text-black-50 mx-1"></i>
+                    <i class="fa fa-database fa-2x text-black-50 mx-1"></i>
+                    <i class="fa-brands fa-html5 fa-2x text-black-50 mx-1"></i>
+                    <i class="fa-brands fa-css3 fa-2x text-black-50 mx-1"></i>
+                    <i class="fa-brands fa-js fa-2x text-black-50 mx-1"></i>
+                  </div>
+                </div>
+                <div class="col-sm-6">
+                  <a href="https://github.com/Joaquin-Flores/Tambo">
+                    <img src="assets/images/thumbnail-Tambo.png" alt="Thumbnail Tambo" class="img-thumbnail shadow hover-effect smooth-transition smooth-transition">
+                  </a>
+                </div>
+              </div>
+            </div>
           </div>
-        </a>
-      </div>
-      <div class="col-md-4 my-2">
-        <a href="https://github.com/Joaquin-Flores/SNAKE-GAME" class="text-decoration-none">
-          <div class="card project-card p-3">
-            <h5>Snake</h5>
-            <p>Juego de Snake desarrollado en Java.</p>
+        </div>
+
+        <div class="col-xxl-4 col-lg-6 my-2">
+
+          <!-- Quinta tarjeta -->
+          <div class="card shadow hover-effect smooth-transition">
+            <a href="#collapseCard5" class="row d-flex text-decoration-none card-header py-3 collapsed" data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="collapseCard5">
+              <div class="col-6">
+                <h3 class="m-0 text-bold h4">App de clima</h3>
+              </div>  
+              <div class="col-6 text-end">
+                <i id="chevronIcon" class="smooth-transition fa fa-chevron-down mx-1 align-content-center"></i>
+              </div>
+            </a>
+            <div class="collapse" id="collapseCard5">
+              <div class="card-body row">
+                <div class="col-sm-6">
+                  <p>Sabios es un juego de trivia católica. Tiene una tienda, lógica de puntaje y más. Visita aquí el <a href="https://joaquin-flores.github.io/Sabios" target="_blank">sitio en vivo</a></p>
+                  <p class="fst-italic">Tecnologías:</p>
+                  <div class="d-flex my-3">
+                    <p class="lead my-0 mx-1 user-select-none text-black-50">.json</p>
+                    <i class="fa-brands fa-bootstrap fa-2x text-black-50 mx-1"></i>
+                    <i class="fa-brands fa-html5 fa-2x text-black-50 mx-1"></i>
+                    <i class="fa-brands fa-css3 fa-2x text-black-50 mx-1"></i>
+                    <i class="fa-brands fa-js fa-2x text-black-50 mx-1"></i>
+                  </div>
+                </div>
+                <div class="col-sm-6">
+                  <a href="https://github.com/Joaquin-Flores/Sabios">
+                    <img src="assets/images/thumbnail-Tambo.png" alt="Thumbnail Tambo" class="img-thumbnail shadow hover-effect smooth-transition smooth-transition">
+                  </a>
+                </div>
+              </div>
+            </div>
           </div>
-        </a>
+        </div>
+
+        <div class="col-xxl-4 col-lg-6 my-2">
+
+          <!-- Sexta tarjeta -->
+          <div class="card shadow hover-effect smooth-transition">
+            <a href="#collapseCard6" class="row d-flex text-decoration-none card-header py-3 collapsed" data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="collapseCard6">
+              <div class="col-6">
+                <h3 class="m-0 text-bold h4">Color picker</h3>
+              </div>  
+              <div class="col-6 text-end">
+                <i id="chevronIcon" class="smooth-transition fa fa-chevron-down mx-1 align-content-center"></i>
+              </div>
+            </a>
+            <div class="collapse" id="collapseCard6">
+              <div class="card-body row">
+                <div class="col-sm-6">
+                  <p>Snake es el juego retro clásico. Desarrollado utilizando conceptos claves de POO.</p>
+                  <p class="fst-italic">Tecnologías:</p>
+                  <div class="d-flex my-3">
+                    <p class="lead my-0 mx-1 user-select-none text-black-50">Java</p>
+                    <i class="fa fa-mug-hot fa-2x text-black-50 mx-1"></i>
+                  </div>
+                </div>
+                <div class="col-sm-6">
+                  <a href="https://github.com/Joaquin-Flores/Snake">
+                    <img src="assets/images/thumbnail-Tambo.png" alt="Thumbnail Tambo" class="img-thumbnail shadow hover-effect smooth-transition smooth-transition">
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </section>
 
   <!-- About -->
-  <section id="about" class="vh-100">
+  <section id="about">
     <div class="container text-sand text-center">
       <h2 class="display-6 text-bold mb-4">Sobre mí</h2>
       <p class="m-0">|</p>
@@ -79,37 +278,69 @@
       <p class="m-0">|</p>
       <p class="m-0">|</p>
       <p class="lead my-5">
+        <!-- 
+        [como empecé a programar]
+        [Mis intereses]
+        [objetivos actuales]
+        [tecnologías y herramientas que manejo]
+        [algo personal] 
+        -->
         Decidí estudiar ingeniería informática porque me fascina la programación, me apasiona la resolución
         de problemas y el enfoque lógico que se le puede dar, además de las ciencias en general.
         Como ingeniero informático, me llenaré de herramientas para dominar tecnologías y aportar una visión estratégica
         en donde trabaje.
       </p>
-      <p class="m-0">|</p>
-      <p class="m-0">|</p>
-      <p class="m-0">|</p>
-      <p class="m-0">|</p>
-      <br>
-      <div
-        class="row mt-5"
-      >
-        <div class="col"><a href="https://www.linkedin.com/in/joaqu%C3%ADn-flores-764428215/"><i class="fa-brands fa-linkedin text-sand fa-5x"></i></a></div>
-        <div class="col"><a href="https://github.com/Joaquin-Flores"><i class="fa-brands fa-github text-sand fa-5x"></i></a></div>
-        <div class="col"><a href="https://discord.gg/qrpEBP7CC7"><i class="fa-brands fa-discord text-sand fa-5x"></i></a></div>
-      </div>
-      
     </div>
-
   </section>
 
+<!-- sescción Experiencia y educación -->
+
+<!-- Sección blog, compartiendo notas -->
 
   <!-- Contact -->
-  <section id="contact" class="text-center bg-success-subtle">
-    <div class="container my-4">
-      <h2 class="mb-4 display-6 text-bold">Contáctame</h2>
-      <p class="lead">¿Tienes una idea? ¡Hablemos! 🚀</p>
-      <a href="mailto:joaquinflores0109@gmail.com" class="btn btn-primary mt-3"><i class="fa fa-envelope"></i> Enviar email</a>
+   <section id="contact" class="py-5 bg-success-subtle">
+    <!-- Contact form -->
+    <div class="container">
+      <h2 class="text-center mb-4 text-bold display-6">Contáctame</h2>
+      <div class="row justify-content-center">
+        <div class="col-md-8">
+          <form action="https://formspree.io/f/manoqypb" method="POST">
+            <div class="mb-3">
+              <label for="name" class="form-label">Nombre</label>
+              <input type="text" class="form-control" id="name" name="name" required placeholder="Tu nombre">
+            </div>
+            <div class="mb-3">
+              <label for="email" class="form-label">Correo electrónico</label>
+              <input type="email" class="form-control" id="email" name="email" required placeholder="ejemplo@email.com">
+            </div>
+            <div class="mb-3">
+              <label for="message" class="form-label">Mensaje</label>
+              <textarea class="form-control" id="message" name="message" rows="5" required placeholder="Deja un mensaje..."></textarea>
+            </div>
+            <div class="d-grid">
+              <button type="submit" class="btn btn-primary"><i class="fa fa-envelope"></i> Enviar mensaje</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <!-- Other contact methods -->
+    <div class="container text-center mt-5">
+      <div class="row justify-content-center">
+        <div class="col-md-8">
+          <h2 class="mb-4 h3">O búscame en mis redes sociales</h2>
+          <a href="https://www.linkedin.com/in/joaqu%C3%ADn-flores-764428215/"><i class="fa-brands fa-linkedin text-black-50 fa-3x mx-2 hover-effect smooth-transition smooth-transition"></i></a>
+          <a href="https://github.com/Joaquin-Flores"><i class="fa-brands fa-github text-black-50 fa-3x mx-2 hover-effect smooth-transition smooth-transition"></i></a>
+          <a href="https://discord.gg/qrpEBP7CC7"><i class="fa-brands fa-discord text-black-50 fa-3x mx-2 hover-effect smooth-transition smooth-transition"></i></a>
+  
+        </div>
+      </div>
     </div>
   </section>
+  
+    <!-- Links a mis redes sociales: Github, LinkedIn, correo electrónico -->
+     <!-- CV descargable en PDF -->
 
   <!-- Footer -->
   <footer class="bg-dark bg-gradient">
