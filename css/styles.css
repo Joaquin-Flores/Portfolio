@@ -60,31 +60,6 @@ section {
   transform: translateY(-10px);
 }
 
-.rotate-360 {
+.rotate-180 {
   transform: rotate(180deg);
-}
-
-footer {
-  text-align: center;
-  padding: 2rem;
-  font-size: 0.9rem;
-}
-
-svg {
-  position: absolute;
-  z-index: 0;
-}
-
-.blob {
-  top: 20%;
-  left: 10%;
-  width: 200px;
-  opacity: 0.3;
-}
-
-.blob2 {
-  bottom: 10%;
-  right: 15%;
-  width: 250px;
-  opacity: 0.2;
 }
